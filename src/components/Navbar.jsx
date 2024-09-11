@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../assets/img/logonx.png'
+import images from '../assets/images'
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
@@ -21,21 +21,11 @@ const Navbar = () => {
         window.addEventListener('scroll', changeColor)
         return () => window.removeEventListener('scroll', changeColor)
     }, [])
-    // 50: '#fdf8f6',
-    // 100: '#f2e8e5',
-    // 200: '#233876',
-    // 300: '#e0cec7',
-    // 400: '#F7E9D7',
-    // 500: '#EBD8C3',
-    // 600: '#98A8F8',
-    // 700: '#BCCEF8',
-    // 800: '#CDFCF6',
-    // 900: '#FAF7F0',
     return (
         <div className={`${color ? 'bg-jembot-200 shadow-lg' : 'bg-transparent'} fixed w-full h-[60px] z-50 transition-colors duration-300 ease-in-out`}>
             <nav className='flex justify-between items-center h-full max-w-[1240px] mx-auto px-4'>
                 <a href='/'>
-                    <img src={logo} alt='logo' className='w-[200px] h-auto' />
+                    <img src={images.Logonx} alt='logo' className='w-[200px] h-auto' />
                 </a>
                 <div className='md:hidden' onClick={handleClick}>
                     {click ? (

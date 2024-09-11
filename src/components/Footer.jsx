@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/img/logo.png'
+import images from '../assets/images';
 export const Footer = () => {
   return (
     <div className="relative mt-16 bg-white">
@@ -17,7 +17,7 @@ export const Footer = () => {
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex sm:col-span-2">
           <a href='/' className='logo'>
-                    <img src={logo} alt='logo' />
+                    <img src={images.Logo} alt='logo' />
                 </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-gray-800">

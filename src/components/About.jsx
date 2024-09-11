@@ -1,12 +1,12 @@
 import React from 'react'
-import john from '../assets/img/whyus.png'
+import images from '../assets/images'
 import { FaWhatsapp } from 'react-icons/fa'
 
 const About = () => {
     return (
         <div className='bg-[#F4F8FC] py-32 px-4 w-full flex justify-center' id='about'>
             <div className='w-full max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-4'>
-                <img src={john} alt='john' className='w-full max-w-[600px] h-auto md:max-w-[600px] md:h-[550px]'/>
+                <img src={images.Why} alt='john' className='w-full max-w-[600px] h-auto md:max-w-[600px] md:h-[550px]'/>
                 <div className='flex flex-col justify-center items-center p-12'>
                     <h2 className='text-3xl'>Kenapa Harus Kami?</h2>
                     <span className='block w-16 h-1 bg-black my-4'></span>
